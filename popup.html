@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Google Maps Easy Scrape</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { 
+      min-width: 570px; 
+      padding: 20px; 
+      font-family: 'Poppins', sans-serif; 
+    }
+    #message {
+      font-size: 16px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      text-decoration: none;
+    }
+    .button {
+
+      padding: 10px 20px; 
+      border: none;
+      color: white;
+      background-color: #007BFF;
+      cursor: pointer; 
+      transition: background-color 0.3s ease; 
+      border-radius: 20px;
+      font-family: 'Poppins', sans-serif;
+    }
+    .button:hover {
+      background-color: #0056b3; 
+    }
+    .input {
+      padding: 8px 15px;
+      margin-right: 10px; 
+      border: 1px solid #ddd;
+      border-radius: 20px;
+      font-family: 'Poppins', sans-serif;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #dddddd;
+    }
+    h1 {
+      font-weight: 600;
+      font-size: 24px;
+      margin: 0;
+    }
+    h4 {
+      margin: 0;
+      padding-top: 10px;
+    }
+    h4 a {
+      color: #676767;
+      text-decoration: none;
+    }
+    h4 a:hover {
+      color: #007BFF;
+      text-decoration: none;
+    }
+  </style>  
+</head>
+<body>
+  <h1>&#x1F5FA;&#xFE0F; Google Maps Easy Scrape</h1>
+  <h4>
+    <a href="https://www.youtube.com/@itsmikepowers" target="_blank">By Mike</a> 
+    <a href="https://www.buymeacoffee.com/itsmikepowers" target="_blank">Buy Me A Coffee :)</a>
+  </h4>
+  <div id="message">Checking URL...</div>
+  <button id="actionButton" class="button" disabled>Scrape Google Maps</button>
+  <button id="downloadCsvButton" class="button" style="margin-left: 10px;" disabled>Download as CSV</button>
+  <input type="text" id="filenameInput" class="input" placeholder="Enter file name" style="margin-left: 10px;" />
+  <table id="resultsTable">
+    <thead>
+      <tr>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  <script src="popup.js"></script>
+</body>
+</html>
